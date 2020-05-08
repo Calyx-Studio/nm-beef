@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: {
 	  main: './src/index.js',
+
 	  styles:'./src/assets/css/style.css'
 	  
   },
@@ -56,6 +57,10 @@ module.exports = {
 	    filename: 'index.html',
       template: 'src/index.html'
     }),
+     new HtmlWebpackPlugin({
+        filename: 'events.html',
+        template: 'src/events.html'
+     }),
   ],
   output: {
 	  filename:'[name].js',
