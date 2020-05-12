@@ -3,7 +3,7 @@ module.exports = {
 
 
 		fontFamily: {
-			'display': 'Zilla Slab, serif',
+			'display': 'Museo Slab, serif',
 			'body': ['"Libre Franklin"', 'sans-serif'],
 		},
 		boxShadow: {

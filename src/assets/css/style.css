@@ -5,38 +5,53 @@
 @tailwind base;
 
 
+/*@font-face {*/
+/*  font-family: 'Zilla Slab';*/
+/*  font-weight: 400; */
+/*  src: url(../fonts/zilla-slab/ZillaSlab-Regular.otf) format('opentype');*/
+/*}*/
+/*@font-face {*/
+/*  font-family: "Zilla Slab";*/
+/*  font-weight: 400;*/
+/*  font-style:italic;*/
+/*  src: url('../fonts/zilla-slab/ZillaSlab-RegularItalic.otf') format('opentype');*/
+/*}*/
+/*@font-face {*/
+/*  font-family: "Zilla Slab";*/
+/*  font-weight: 500;*/
+/*  src: url("../fonts/zilla-slab/ZillaSlab-SemiBold.otf") format("opentype");*/
+/*}*/
+
+
 @font-face {
-  font-family: 'Zilla Slab';
-  font-weight: 400; 
-  src: url(../fonts/zilla-slab/ZillaSlab-Regular.otf) format('opentype');
+	font-family: "Museo Slab";
+	font-weight: 500;
+	src: url("../fonts/museo-slab/Museo_Slab_500_2-webfont.woff") format('woff');
 }
+
 @font-face {
-  font-family: "Zilla Slab";
-  font-weight: 400;
-  font-style:italic;
-  src: url('../fonts/zilla-slab/ZillaSlab-RegularItalic.otf') format('opentype');
+	font-family: "Museo Slab";
+	font-weight: 500;
+	font-style:italic;
+	src: url("../fonts/museo-slab/Museo_Slab_500italic-webfont.woff") format('woff');
 }
-@font-face {
-  font-family: "Zilla Slab";
-  font-weight: 500;
-  src: url("../fonts/zilla-slab/ZillaSlab-SemiBold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Zilla Slab";
-  font-weight: 600;
-  src: url("../fonts/zilla-slab/ZillaSlab-SemiBold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Zilla Slab";
-  font-weight: 700;
-  src: url("../fonts/zilla-slab/ZillaSlab-Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Zilla Slab";
-  font-weight: 700;
-  font-style:italic;
-  src: url("../fonts/zilla-slab/ZillaSlab-BoldItalic.otf") format("opentype");
-}
+
+/*@font-face {*/
+/*  font-family: "Zilla Slab";*/
+/*  font-weight: 600;*/
+/*  src: url("../fonts/zilla-slab/ZillaSlab-SemiBold.otf") format("opentype");*/
+/*}*/
+/*@font-face {*/
+/*  font-family: "Zilla Slab";*/
+/*  font-weight: 700;*/
+/*  src: url("../fonts/zilla-slab/ZillaSlab-Bold.otf") format("opentype");*/
+/*}*/
+/*@font-face {*/
+/*  font-family: "Zilla Slab";*/
+/*  font-weight: 700;*/
+/*  font-style:italic;*/
+/*  src: url("../fonts/zilla-slab/ZillaSlab-BoldItalic.otf") format("opentype");*/
+/*}*/
 @font-face {
   font-family: "Libre Franklin";
   font-weight: 400;
