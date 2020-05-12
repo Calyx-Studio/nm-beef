@@ -291,6 +291,10 @@ blockquote footer a {
 
 /* CS Adds*/
 
+p{
+
+}
+
 .jumbotron {
 	padding: 30px; /* fills out the jumbotron */
 	max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
