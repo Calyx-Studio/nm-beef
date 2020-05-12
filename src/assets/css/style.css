@@ -285,5 +285,28 @@ blockquote footer{
 	@apply text-small italic text-brown-800  mt-4 mb-2;
 }
 blockquote footer a {
- @apply not-italic;	
+ @apply not-italic;
+}
+
+
+/* CS Adds*/
+
+.jumbotron {
+	padding: 30px; /* fills out the jumbotron */
+	max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
+	background:url("../img/usrsb_stackphotography.png") top center no-repeat;
+	background-size: 100% auto;
+	display: flex;
+	flex-direction: column;              /*  added  */
+	justify-content: center;
+	align-items: center;
+
+}
+
+.jumbotron h1{
+
+}
+
+.splash-image {
+
 }
