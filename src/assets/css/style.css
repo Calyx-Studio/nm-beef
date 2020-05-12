@@ -295,18 +295,8 @@ blockquote footer a {
 	padding: 30px; /* fills out the jumbotron */
 	max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
 	background:url("../img/usrsb_stackphotography.png") top center no-repeat;
-
 	background-size: cover;
 	display: inline-block;
-
-
 }
 
-.jumbotron h1{
-
-
-}
-
-.splash-image {
-
-}
+.read-basic {@apply ml-auto mr-auto;}
