@@ -1,3 +1,4 @@
+
 /**
  * This injects Tailwind's base styles and any base styles registered by
  * plugins.
@@ -110,7 +111,7 @@
  */
 @tailwind utilities;
 
-a{ @apply text-blue-700 font-semibold border-b-2 border-green-800;}
+a{ @apply text-blue-700 font-semibold border-b-2 border-milky-900;}
 hr {border-width:0;}
 
 th{
@@ -295,6 +296,8 @@ p{
 	margin-top: .3em ;
 	margin-bottom: .7em ;
 }
+
+nav a{ @apply text-blue-700 font-semibold border-b border-milky-900;}
 
 .jumbotron {
 	padding: 30px; /* fills out the jumbotron */
