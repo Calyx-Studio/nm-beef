@@ -286,15 +286,16 @@ a .card h3, a .card h4 {
 	@apply text-blue-900 font-display text-2xl font-bold;
 }
 a .card p{
-	@apply text-brown-700 ;
+	@apply text-brown-700 text;
 }
 .card.dark{
-	@apply text-white bg-green-300;
+	@apply text-milky-100 bg-green-900;
 }
 a .card.dark p{
-	@apply text-white;
+	@apply text-milky-100 text;
 }
 a .card.dark h3, a .card.dark h4 {
+	@apply text-blue-100;
 
 }
 blockquote {
