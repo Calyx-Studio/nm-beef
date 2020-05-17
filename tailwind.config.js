@@ -27,7 +27,7 @@ module.exports = {
 			inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
 			outline: '0 0 0 3px rgba(96,171,210,0.5)',
 			focus: '0 0 0 3px rgba(96,171,210,0.5)',
-			menu:'16px 0 16px -2px  rgba(0, 0, 0, .06), 6px 0 16px -2px  rgba(0, 0, 0, .06)',
+			menu:'10px 6px 16px -2px  rgba(0, 0, 0, .06), 4px 4px 10px -2px  rgba(0, 0, 0, .06)',
 			'none': 'none',
 		},
 		extend: {
