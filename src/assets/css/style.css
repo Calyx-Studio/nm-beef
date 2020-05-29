@@ -366,3 +366,5 @@ nav a{ @apply text-blue-700 font-semibold border-b-2 border-milky-900;}
 .read-bio blockquote p{
 	max-width:none;
 }
+
+img.recipe{}
