@@ -360,11 +360,12 @@ nav a{ @apply text-blue-700 font-semibold border-b-2 border-milky-900;}
 .read-bio h5 {@apply text-sm text-brown-900 leading-snug italic ;}
 .read-bio figure { @apply ml-auto mr-auto mt-1 ;}
 .read-bio ul {
-	@apply  max-w-xl mr-auto ml-auto my-4 text-large leading-snug list-disc ;
+	@apply  max-w-xl mr-auto ml-auto my-4 text leading-loose list-disc ;
 	max-width:620px;
 }
 .read-bio blockquote p{
 	max-width:none;
 }
+.read-bio li span{ font-weight: bolder;}
 
 img.recipe{}
