@@ -205,7 +205,7 @@ th{
 	@apply font-display;
 }
 button{
-	 @apply font-bold py-2 px-4 rounded bg-green-900 text-white;
+	 @apply font-bold py-2 px-4 rounded bg-red-900 text-white;
 }
 button:hover{
 	@apply bg-green-800;
@@ -213,6 +213,17 @@ button:hover{
 button.btn-lg{
 	@apply py-4 px-10 text-large;
 }
+
+.button-menu{
+	@apply font-bold py-2 px-4 rounded bg-green-900 text-white;
+}
+.button-menu:hover{
+	@apply bg-green-800;
+}
+.button-menu.btn-lg{
+	@apply py-4 px-10 text-large;
+}
+
 .error-msg{
 	@apply text-red-500 text-xs italic
 }
