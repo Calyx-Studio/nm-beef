@@ -328,7 +328,7 @@ p{
 }
 
 
-nav a{ @apply text-blue-700 font-semibold border-b-2 border-milky-900;}
+nav a{ @apply text-white font-semibold border-b-2 border-milky-900;}
 
 .jumbotron {
 	padding: 30px; /* fills out the jumbotron */
@@ -381,6 +381,86 @@ nav a{ @apply text-blue-700 font-semibold border-b-2 border-milky-900;}
 
 img.recipe{}
 
+
+ /*Initial Menu option */
+.header-logo a{
+	border: none;
+}
+
 #menu-toggle:checked + #menu{
 	display: block;
+}
+
+
+/* Menu with primary and secondary menu */
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+	Based on: https://codepen.io/nickelse/pen/YGPJQG
+	Influenced by: https://sproutsocial.com/
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* #Secondary Menu Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.secondary-menu {
+	display: none;
+	right: 0;
+	position: absolute;
+	text-align: left;
+	width: 100%;
+}
+
+
+
+/* #hoverable Class Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hoverable {
+	position: static;
+}
+
+.hoverable > a:after {
+	content: "\25BC";
+	font-size: 10px;
+	padding-left: 6px;
+	position: relative;
+	top: -1px;
+}
+
+.hoverable:hover .secondary-menu {
+	display: block;
+}
+
+
+/* #toggle Class Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.toggleable > label:after {
+	content: "\25BC";
+	font-size: 10px;
+	padding-left: 6px;
+	position: relative;
+	top: -1px;
+}
+
+.toggle-input {
+	display: none;
+}
+.toggle-input:not(checked) ~ .secondary-menu {
+	display: none;
+}
+
+.toggle-input:checked ~ .secondary-menu {
+	display: block;
+}
+
+.toggle-input:checked + label {
+	color: white;
+	background: #2c5282; /*@apply bg-blue-800 */
+}
+
+.toggle-input:checked ~ label:after {
+	content: "\25B2";
+	font-size: 10px;
+	padding-left: 6px;
+	position: relative;
+	top: -1px;
 }
