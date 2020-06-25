@@ -392,15 +392,10 @@ img.recipe{}
 }
 
 
-/* Menu with primary and secondary menu */
-/* ––––––––––––––––––––––––––––––––––––––––––––––––––
-	Based on: https://codepen.io/nickelse/pen/YGPJQG
-	Influenced by: https://sproutsocial.com/
- –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
-/* #Secondary Menu Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* #Secondary Menu Stylesc*/
 .secondary-menu {
 	display: none;
 	right: 0;
@@ -411,8 +406,7 @@ img.recipe{}
 
 
 
-/* #hoverable Class Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* #hoverable Class Styles */
 .hoverable {
 	position: static;
 }
@@ -454,7 +448,7 @@ img.recipe{}
 
 .toggle-input:checked + label {
 	color: white;
-	background: #2c5282; /*@apply bg-blue-800 */
+
 }
 
 .toggle-input:checked ~ label:after {
