@@ -380,3 +380,7 @@ nav a{ @apply text-blue-700 font-semibold border-b-2 border-milky-900;}
 .read-bio li span{ font-weight: bolder;}
 
 img.recipe{}
+
+#menu-toggle:checked + #menu{
+	display: block;
+}
