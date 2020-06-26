@@ -322,6 +322,11 @@ blockquote footer a {
 
 /* CS Adds*/
 
+
+.jumbotron{
+	min-height: 400px;
+}
+
 p{
 	margin-top: .3em ;
 	margin-bottom: .7em ;
@@ -385,6 +390,7 @@ img.recipe{}
  /*Initial Menu option */
 .header-logo a{
 	border: none;
+
 }
 
 #menu-toggle:checked + #menu{

@@ -63,11 +63,11 @@
 
 <!-- toggle menu-->
 <header class="lg:px-2 px-1 bg-red-900 flex flex-wrap items-center py-3 ">
-	<div class="flex-1 flex justify-between items-center header-logo w-1/2 lg:w-1/3"><a href="#"><img
+	<div class="flex-1 flex justify-between items-center header-logo pr-8"><a href="#"><img
 		alt="New Mexico Beef Council logo" src="assets/img/NewMexicoBeefheaderimage091619Final.png"></a></div>
 
 	<!-- hamburger menu -->
-	<label class="pointer-cursor lg:hidden block pr-12" for="menu-toggle">
+	<label class="pointer-cursor lg:hidden block pr-12 md:pr20" for="menu-toggle">
 		<svg class="fill-current text-white h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>
 			Menu</title>
 			<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
@@ -168,8 +168,8 @@
 	</div>
 
 </div>
-<div class="flex mb-4">
-	<div class="w-full  font-body lg:flex lg:flex-wrap text-brown-700  bg-brown-100 pb-5 pt-5 read">
+<div class="flex mb-4 ">
+	<div class="w-full  font-body lg:flex lg:flex-wrap text-brown-700  bg-brown-100 py-10 read">
 		<p class="w-3/4 mr-2 ml-auto font-display text-xl text-brown-900  mb-5">
 			The mission of the New Mexico Beef Council is to protect and increase demand for Beef and Beef products in New
 			Mexico through national and state developed consumer marketing programs, thereby enhancing profit opportunities
@@ -334,10 +334,8 @@
 					<label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-text">
 						How are you?
 					</label>
-					<input
-						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-						id="grid-text" placeholder="Tell us something" type="text">
-					<p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
+					<input class="error" id="grid-text" type="text" value="Wrong answer">
+					<p class="error-msg">This field has an error.</p>
 				</div>
 			</div>
 			<div class="flex flex-wrap -mx-3 mb-2">
@@ -369,12 +367,54 @@
 					</div>
 				</div>
 				<div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+					<label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-wrong">
+						wrong answers only
+					</label>
+					<div class="relative">
+						<select
+							class=" error block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+							id="grid-wrong">
+							<option>Nope</option>
+							<option>None</option>
+							<option>Zero</option>
+						</select>
+						<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+							<svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+							</svg>
+						</div>
+					</div>
+					<p class="error-msg">This field has an error.</p>
+				</div>
+				<div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
 					<label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
 						Zip
 					</label>
 					<input
 						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
 						id="grid-zip" placeholder="90210" type="text">
+				</div>
+				<div class="mb-4 w-1/2 md:w-1/3  p-6">
+					<h4 class='font-display heading-xs text-blue-900'>Checkboxes</h4>
+					<div class="mr-3">
+						<input checked id="webdesign" name="webdesign" type="checkbox">
+						<label class='font-normal' for="webdesign">Web Design</label>
+					</div>
+					<div>
+						<input id="sardines" name="sardines" type="checkbox">
+						<label class='font-normal' for="sardines">Sardine Ice Cream</label>
+					</div>
+				</div>
+				<div class="mb-4 w-1/2 md:w-1/3  p-6">
+					<h4 class='font-display heading-xs text-blue-900'>Radio buttons</h4>
+					<div>
+						<input id="contactChoice1" name="contact" type="radio" value="email">
+						<label class='font-normal' for="contactChoice1">Email</label>
+					</div>
+					<div>
+						<input id="contactChoice2" name="contact" type="radio" value="phone">
+						<label class='font-normal' for="contactChoice2">Phone</label>
+					</div>
 				</div>
 			</div>
 		</form>
@@ -584,7 +624,8 @@
 			<div class="w-full md:w-1/3">
 				<h4 class="font-display text-xl  m-2 font-semibold"> Credits </h4>
 				<ul class="p-3">
-					<li class='my-2 leading-tight'>Thank you <a href="#">This Person</a> for your pro-bono matching donation of a stellar
+					<li class='my-2 leading-tight'>Thank you <a href="#">This Person</a> for your pro-bono matching donation
+						of a stellar
 						add0n
 					</li>
 					<li class='my-2 leading-tight'>Thank you 516 ARTS staff for your tremendous effort in content curation to
@@ -595,7 +636,7 @@
 		</footer>
 	</div>
 	<!--		IMG for Blog -->
-<div class="w-full lg:w-1/8 lg:my-0 lg:pt-24 font-body flex  overflow-hidden  ">
+	<div class="w-full lg:w-1/8 lg:my-0 lg:pt-24 font-body flex  overflow-hidden  ">
 
 		<div class="">
 			<img src="assets/img/usrsb_stackphotography.png">
@@ -889,7 +930,6 @@
 </div>
 
 
-
 <div class='lg:flex mb-4 ml-auto mr-auto lg:mr-0 lg:ml-0 w-3/4 lg:w-full '>
 	<div class="w-full lg:w-1/5  font-body flex flex-wrap text-brown-700 text-right">
 		<h2 class="lg:ml-20 text-2xl font-display text-red-900 font-bold">Color</h2>
@@ -996,107 +1036,7 @@
 		<hr class="bg-blue-300 h-1">
 	</div>
 </div>
-<div class='lg:flex mb-4 ml-auto mr-auto lg:mr-0 lg:ml-0 w-3/4 lg:w-full '>
-	<div class="w-full lg:w-1/5  font-body flex flex-wrap text-brown-700 ">
-		<h2 class="lg:ml-5 text-2xl font-display text-red-900 font-bold">UI Components</h2>
-	</div>
-	<div class="w-full lg:w-5/6  font-body mb-12">
-		<div class="mb-4 ">
-			<button>Button</button>
-			<button class='btn-lg'>Big Button</button>
-		</div>
-		<div class="flex mb4">
-			<div class="mb-4 w-1/2 md:w-1/3  p-6">
-				<label class="" for="textfirst">
-					Default Label
-				</label>
-				<input class=" focus" id="textfirst" placeholder="Placeholder for text" type="text">
-			</div>
-			<div class="mb-4 w-1/2 md:w-1/3  p-6">
-				<label class="" for="textsecond">
-					Text field error
-				</label>
-				<input class="error" id="textsecond" type="text" value="Wrong answer">
-				<p class="error-msg">This field has an error.</p>
-			</div>
-		</div>
-		<div class="mb-4 w-full md:w-2/3  flex">
-			<div class="w-full md:w-1/2 mb-6 md:mb-0  p-6">
-				<label class="" for="selectfirst">
-					Select
-				</label>
-				<div class="relative">
-					<select class="" id="selectfirst">
-						<option>Please choose:</option>
-						<option>New Mexico</option>
-						<option>Missouri</option>
-						<option>Texas</option>
-					</select>
-					<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-brown-700">
-						<svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-							<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-						</svg>
-					</div>
-				</div>
-			</div>
-			<div class="w-full md:w-1/2 mb-6 md:mb-0  p-6">
-				<label class="" for="selectfirst">
-					Select
-				</label>
-				<div class="relative">
-					<select class="error" id="selectsecond">
-						<option>You Chose..</option>
-						<option>..poorly.</option>
-					</select>
-					<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-brown-700">
-						<svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-							<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-						</svg>
-					</div>
-				</div>
-				<p class="error-msg">This field has an error.</p>
-			</div>
 
-		</div>
-		<div class="flex mb4">
-			<div class="mb-4 w-1/2 md:w-1/3  p-6">
-				<h4 class='font-display heading-xs text-blue-900'>Checkboxes</h4>
-				<div>
-					<input checked id="webdesign" name="webdesign" type="checkbox">
-					<label class='font-normal' for="webdesign">Web Design</label>
-				</div>
-				<div>
-					<input id="sardines" name="sardines" type="checkbox">
-					<label class='font-normal' for="sardines">Sardine Ice Cream</label>
-				</div>
-			</div>
-			<div class="mb-4 w-1/2 md:w-1/3  p-6">
-				<h4 class='font-display heading-xs text-blue-900'>Radio buttons</h4>
-				<div>
-					<input id="contactChoice1" name="contact" type="radio" value="email">
-					<label class='font-normal' for="contactChoice1">Email</label>
-				</div>
-				<div>
-					<input id="contactChoice2" name="contact" type="radio" value="phone">
-					<label class='font-normal' for="contactChoice2">Phone</label>
-				</div>
-			</div>
-			<div class="p-6">
-				<h4 class='font-display heading-xs text-blue-900'>Unstyled</h4>
-				<p>No way am I styling those things. Have you <a
-					href="https://www.w3schools.com/howto/howto_css_custom_checkbox.asp"
-					target="_blank" title="the ridiculous hoops to changing the color of checkboxes">read about what it takes
-					just to change their color</a>? Psh. You have to hide the <i>actual</i> element and reproduce a styled
-					shape that looks just like this but a different color. The whole thing just feels dishonest.</p>
-			</div>
-		</div>
-	</div>
-</div>
-<div class='flex mb-4 '>
-	<div class="w-3/4 ml-auto mr-auto  h-12 font-body">
-		<hr class="bg-blue-300 h-1">
-	</div>
-</div>
 <div class='lg:flex mb-4 ml-auto mr-auto lg:mr-0 lg:ml-0 w-3/4 lg:w-full '>
 	<div class="w-full lg:w-1/5  font-body flex flex-wrap text-brown-700 ">
 		<h2 class="lg:ml-12 text-2xl font-display text-red-900 font-bold mb-3 lg:mb-0" id='images'>Images</h2>
