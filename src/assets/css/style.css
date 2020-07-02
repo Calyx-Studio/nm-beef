@@ -469,5 +469,7 @@ img.recipe{}
 /* #Blog image Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .blog-image{
-margin-right: -300px;
+	margin-right: -300px;
+	box-shadow: inset -67px 0 9px -7px rgba(252,251,249);
+
 }
