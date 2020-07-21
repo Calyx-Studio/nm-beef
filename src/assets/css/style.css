@@ -472,13 +472,13 @@ img.recipe{}
 	margin-right: -300px;
 
 }
+@responsive{
 .blog-image-overlay{
 	position: absolute;
-	width: 25.5%;
+	width: 29%;
 	height: 100%;
-	box-shadow: inset -67px 0 20px -30px rgba(252, 251, 249,1);
-
-
+	box-shadow: inset -80px 0 20px -30px rgba(252, 251, 249,1);
+}
 }
 /*.blog-image{*/
 /*	margin-right: -300px;*/
