@@ -61,6 +61,22 @@ module.exports = {
         filename: 'events.html',
         template: 'src/events.html'
      }),
+     new HtmlWebpackPlugin({
+        filename: 'recipe-page.html',
+        template: 'src/recipe-page.html'
+     }),
+     new HtmlWebpackPlugin({
+        filename: 'recipe-search.html',
+        template: 'src/recipe-search.html'
+     }),
+     new HtmlWebpackPlugin({
+        filename: 'board-of-directors-index.html',
+        template: 'src/board-of-directors-index.html'
+     }),
+     new HtmlWebpackPlugin({
+        filename: 'board-of-directors-page.html',
+        template: 'src/board-of-directors-page.html'
+     }),
   ],
   output: {
 	  filename:'[name].js',
