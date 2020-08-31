@@ -77,6 +77,10 @@ module.exports = {
         filename: 'board-of-directors-page.html',
         template: 'src/board-of-directors-page.html'
      }),
+	  new HtmlWebpackPlugin({
+		  filename: 'text.html',
+		  template: 'src/text.html'
+	  }),
   ],
   output: {
 	  filename:'[name].js',

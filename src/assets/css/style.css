@@ -401,13 +401,14 @@ img.recipe{}
 
 
 
-/* #Secondary Menu Stylesc*/
+/* #Secondary Menu Styles */
 .secondary-menu {
 	display: none;
 	right: 0;
 	position: absolute;
 	text-align: left;
 	width: 100%;
+	z-index: 1;
 }
 
 
