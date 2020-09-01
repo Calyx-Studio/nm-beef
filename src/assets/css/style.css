@@ -323,22 +323,34 @@ blockquote footer a {
 /* CS Adds*/
 
 
-.jumbotron{
-	min-height: 400px;
-}
-
 p{
 	margin-top: .3em ;
 	margin-bottom: .7em ;
 }
 
-
 nav a{ @apply text-white font-semibold border-b-2 border-milky-900;}
+a.active{
+@apply border-b-2 border-blue-900;
+}
+.text-shadow-md {
+	text-shadow:2px 3px 4px #373533;
+}
+
 
 .jumbotron {
+	min-height: 400px;
 	padding: 30px; /* fills out the jumbotron */
 	max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
 	background:url("../img/usrsb_stackphotography.png") top center no-repeat;
+	background-size: cover;
+	display: inline-block;
+}
+
+.jumbotron-recipe {
+	padding: 30px; /* fills out the jumbotron */
+	max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
+	max-height: 60rem;
+	background:url("../img/HeartySteakandBeanChili_43048d7f6dc96858dbb626f884f7b1a6.jpg") top center no-repeat;
 	background-size: cover;
 	display: inline-block;
 }
@@ -454,8 +466,7 @@ img.recipe{}
 }
 
 .toggle-input:checked + label {
-	color: white;
-
+	@apply border-b-2 border-blue-900;
 }
 
 .toggle-input:checked ~ label:after {
